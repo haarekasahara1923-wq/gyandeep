@@ -31,9 +31,9 @@ export default async function GalleryPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Our Gallery</h1>
+        <h1 className={styles.title}>Our Campus & Activities</h1>
         <p className={styles.subtitle}>
-          Glimpses of learning and activities at Gyandeep Institute
+          Glimpses of academic sessions, celebrations and student activities at Gyandeep Institute
         </p>
       </div>
 

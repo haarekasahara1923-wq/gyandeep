@@ -64,7 +64,7 @@ export default async function ContactPage() {
               <span className={styles.icon}>🕐</span>
               <div>
                 <strong>Batch Timings</strong>
-                <p>Monday – Saturday: 7:00 AM – 8:00 PM</p>
+                <p>Monday – Saturday: 7:00 AM – 7:00 PM</p>
               </div>
             </div>
           </div>

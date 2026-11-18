@@ -12,7 +12,7 @@ interface FooterProps {
 
 export default function Footer({
   schoolName = "Gyandeep Institute",
-  tagline = "Gwalior mein sabse trusted coaching center. Baijal Kothi, Near Girls College, Morar Gwalior (MP)-474006.",
+  tagline = "Classes 1st to 12th (All Streams) | NEET | IIT-JEE | Sainik School & Navodaya | Online Education. Morar, Gwalior (MP).",
   address = "Baijal Kothi, Near Girls College, In Front of Cantonment Office, Morar Gwalior (MP)-474006",
   phone = "+917828499519",
   email = "ajaat7828@gmail.com",

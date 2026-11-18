@@ -35,10 +35,10 @@ export default function CoursesPage() {
         <div className={styles.heroBannerContent}>
           <span className="section-label">Hamare Courses</span>
           <h1 className={`${styles.heroBannerTitle} animate-fade-in`}>
-            Apni English Journey <span>Shuru Karein</span>
+            Apna Shaikshik Bhavishya <span>Ujjwal Banayein</span>
           </h1>
           <p className={`${styles.heroBannerSub} animate-fade-in-2`}>
-            Gyandeep Institute ke saath — Spoken English se lekar Competitive Exams tak, har level ke liye expert courses available hain.
+            Gyandeep Institute ke saath — Classes 1st to 12th (All Streams), NEET, IIT-JEE, Sainik School, Navodaya, Foundation Courses aur Online Education.
           </p>
         </div>
       </section>

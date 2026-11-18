@@ -37,7 +37,7 @@ export default async function PublicLayout({
   }
 
   const schoolName = settingsMap["school_name"] || "Gyandeep Institute";
-  const tagline = settingsMap["school_tagline"] || "Gwalior mein sabse trusted coaching center. Baijal Kothi, Near Girls College, Morar Gwalior (MP)-474006.";
+  const tagline = settingsMap["school_tagline"] || "Classes 1st to 12th (All Streams) | NEET | IIT-JEE | Sainik School & Navodaya | Online Education.";
   const logoUrl = settingsMap["school_logo_url"] || "";
   const phone = contact?.phone || "+917828499519";
   const email = contact?.email || "ajaat7828@gmail.com";

@@ -29,13 +29,13 @@ export default async function AboutPage() {
 
   const aboutText =
     settingsMap["about_school_text"] ||
-    "Gyandeep Institute — Gwalior ke Morar mein sthit ek trusted coaching center. Yahan spoken English se lekar competitive exams tak har student ko expert guidance milti hai.";
+    "Gyandeep Institute — Morar, Gwalior mein sthit ek premier educational coaching institute. Yahan Classes 1st se 10th (All Subjects - CBSE & MP Board), Classes 11th & 12th (Arts, Bio, Math, Commerce, Agriculture), Competitive Exams (NEET, IIT-JEE, Sainik School, Navodaya, Excellence School), Foundation Courses aur Online Education ke liye expert guidance milti hai.";
   const visionText =
     settingsMap["vision_text"] ||
-    "Hamari vision hai ki Gwalior ka har student confident bane aur apne academic aur career goals achieve kare.";
+    "Hamari vision hai ki har vidyarthi ko quality education, conceptual clarity aur unke academic evam career goals ko achieve karne ke liye best learning environment mile.";
   const missionText =
     settingsMap["mission_text"] ||
-    "Hamari mission hai ki education ko simple, practical aur effective tarike se sikhayein — jisse students real-world mein confident hon.";
+    "Hamara mission hai ki education ko accessible, practical aur result-oriented banayein — jisse school board exams se lekar NEET, JEE aur entrance exams mein students top ranks hasil karein.";
 
   return (
     <div className={styles.container}>

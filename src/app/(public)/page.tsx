@@ -35,9 +35,9 @@ function useCountUp(target: number, duration = 2000) {
 
 export default function Home() {
   const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
-  const years    = useCountUp(8);
-  const students = useCountUp(1200);
-  const batches  = useCountUp(30);
+  const years    = useCountUp(10);
+  const students = useCountUp(2500);
+  const batches  = useCountUp(50);
 
   return (
     <>
@@ -46,23 +46,22 @@ export default function Home() {
         <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
           <div className={`${styles.heroBadge} animate-fade-in`}>
-            🏆 &nbsp; Gwalior ka No.1 Coaching Center — Morar, Gwalior
+            🏆 &nbsp; Gwalior ka Premier Educational Institute — Morar, Gwalior
           </div>
           <h1 className={`${styles.heroTitle} animate-fade-in-2`}>
-            <span className={styles.heroTitleHighlight}>Seekhein Aur Badhein</span>
-            <br />
-            <span className={styles.heroTitleBy}>at</span>{" "}
+            <span className={styles.heroTitleHighlight}>Padhein, Seekhein Aur</span>
+            <span className={styles.heroTitleBy}>Safal Banein with</span>{" "}
             <span className={styles.heroTitleAccent}>Gyandeep Institute</span>
           </h1>
           <p className={`${styles.heroSubtitle} animate-fade-in-3`}>
-            Spoken English, Grammar, Academic aur Competitive Exams — sabke liye expert coaching. Apna future aaj se shuru karein!
+            Classes 1st to 12th (All Streams) • NEET • IIT-JEE • Sainik & Navodaya • Foundation Courses • Online Education. Morning 7:00 AM se Evening 7:00 PM tak batches uplabdh!
           </p>
           <div className={`${styles.ctaGroup} animate-fade-in-3`}>
             <button className="btn-primary" onClick={() => setIsLeadFormOpen(true)}>
-              ✨ Free Demo Class Join Karein
+              ✨ Free Demo Class Book Karein
             </button>
-            <Link href="/about" className="btn-secondary">
-              Hamare Baare Mein Jaanein →
+            <Link href="/courses" className="btn-secondary">
+              Hamare Sabhi Courses Dekhein →
             </Link>
           </div>
         </div>
@@ -80,7 +79,7 @@ export default function Home() {
         <div className={styles.statDivider} />
         <div className={styles.statItem} ref={students.ref}>
           <div className={styles.statNumber}>{students.count}+</div>
-          <div className={styles.statLabel}>Students Trained</div>
+          <div className={styles.statLabel}>Students Guided</div>
         </div>
         <div className={styles.statDivider} />
         <div className={styles.statItem} ref={batches.ref}>
@@ -90,7 +89,7 @@ export default function Home() {
         <div className={styles.statDivider} />
         <div className={styles.statItem}>
           <div className={styles.statNumber}>100%</div>
-          <div className={styles.statLabel}>Success Rate</div>
+          <div className={styles.statLabel}>Dedication & Support</div>
         </div>
       </section>
 
@@ -99,50 +98,77 @@ export default function Home() {
         <div className={`${styles.aboutText} animate-slide-left`}>
           <span className="section-label">Hamare Baare Mein</span>
           <h2 className={`section-title-display ${styles.aboutHeading}`}>
-            English Seekhna Ab <span className="gradient-text">Aasaan Hai</span>
+            Sarvashreshtha Shiksha, <span className="gradient-text">Ujjwal Bhavishya</span>
           </h2>
           <p className={styles.aboutPara}>
-            Gyandeep Institute — Gwalior ke Morar mein sthit ek trusted coaching center hai. Yahan academic English se lekar competitive exams tak, har student ke liye personalized guidance di jaati hai.
+            Gyandeep Institute — Baijal Kothi, Near Girls College, Morar (Gwalior) mein sthit ek vishwasniya shaikshik sansthan hai. Yahan Classes 1st se 10th (CBSE & MP Board - All Subjects) evam Classes 11th & 12th ke sabhi streams (Arts, Biology, Mathematics, Commerce aur Agriculture) ki vyavasthit padhai karai jaati hai.
           </p>
           <p className={styles.aboutPara}>
-            Hamare experienced faculty ke innovative methods se hazaaron students ne apni English communication skills ko transform kiya hai. Hamara focus hai — sirf grammar nahi, real-world English bolna, likhna aur samajhna.
+            Saath hi NEET, IIT-JEE (Main & Advanced), Sainik School, Navodaya evam Excellence School entrance exams ke liye anubhavi teachers dwara margdarshan diya jaata hai. Hamara uddeshya har vidyarthi ki conceptual understanding ko mazboot banana aur unhe aatmanirbhar banana hai.
           </p>
           <div className={styles.aboutActions}>
-            <Link href="/about" className="btn-outline">Poori Story Padhein →</Link>
+            <Link href="/about" className="btn-outline">Sansthan ke Baare Mein Aur Jaanein →</Link>
           </div>
         </div>
         <div className={`${styles.aboutImageWrap} animate-slide-right`}>
           <img
             src="/images/school_activities.jpg"
-            alt="Students in coaching class at Gyandeep Institute"
+            alt="Students studying in classroom at Gyandeep Institute"
             className={styles.aboutImg}
           />
           <div className={styles.aboutImageBadge}>
             <span className={styles.badgeIcon}>🎓</span>
             <div>
-              <div className={styles.badgeNum}>8+</div>
+              <div className={styles.badgeNum}>10+</div>
               <div className={styles.badgeText}>Years of Trust</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== FEATURES / WHY US ===== */}
+      {/* ===== FEATURES / COURSES OFFERED ===== */}
       <section className={styles.featuresSection}>
         <div className={styles.featuresSectionHeader}>
-          <span className="section-label">Kyun Chunein Hume</span>
+          <span className="section-label">Hamare Pramukh Courses</span>
           <h2 className="section-title-display">
-            Hum Kya <span className="gradient-text">Special</span> Offer Karte Hain
+            Aapki Safalta ke Liye <span className="gradient-text">Special Offerings</span>
           </h2>
+          <p className="section-subtitle">
+            School foundation se lekar competitive entrance exams tak — har stage par behtareen tayyari.
+          </p>
         </div>
         <div className={styles.featuresGrid}>
           {[
-            { image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop", title: "Spoken English", desc: "Daily practice sessions aur real-life conversations ke through fluent English bolna seekhein. Confidence build karein." },
-            { image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600&auto=format&fit=crop", title: "Grammar Mastery", desc: "Basic se advanced grammar — tenses, articles, prepositions — sab kuch simple aur effective tarike se sikhaya jaata hai." },
-            { image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=600&auto=format&fit=crop", title: "Academic English", desc: "School aur college ke liye English writing, reading comprehension aur board exam preparation." },
-            { image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop", title: "Competitive Exam Prep", desc: "SSC, Bank, Railway, UPSC — sabhi competitive exams ke liye English section ki comprehensive preparation." },
-            { image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=600&auto=format&fit=crop", title: "Small Batch Size", desc: "Har student ko personal attention mile isliye hum chote batches mein padhaate hain. Individual progress track hota hai." },
-            { image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop", title: "Regular Tests & Feedback", desc: "Weekly tests, mock exams aur detailed feedback se progress measure hoti hai aur improvement tezi se hoti hai." },
+            {
+              image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=600&auto=format&fit=crop",
+              title: "Classes 1st to 10th (All Subjects)",
+              desc: "CBSE aur MP Board ke sabhi subjects — Mathematics, Science, Social Science, Hindi & English ki step-by-step padhai aur daily tests.",
+            },
+            {
+              image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=600&auto=format&fit=crop",
+              title: "Classes 11th & 12th (All Streams)",
+              desc: "Mathematics (PCM), Biology (PCB), Commerce, Arts (Humanities) evam Agriculture stream ke liye visheshagya faculty dwara board tayyari.",
+            },
+            {
+              image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop",
+              title: "NEET & IIT-JEE (Main & Adv.)",
+              desc: "Medical aur Engineering entrance exams ke liye intensive problem solving, previous year questions practice aur regular test series.",
+            },
+            {
+              image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop",
+              title: "Sainik School & Navodaya Prep",
+              desc: "Sainik School, Jawahar Navodaya Vidyalaya aur Excellence School entrance exams ke liye targeted coaching aur mock test batches.",
+            },
+            {
+              image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop",
+              title: "Foundation & Personality Dev.",
+              desc: "Hindi & English Foundation, Reading & Writing skills, Grammar mastery, Public Speaking aur overall Personality Development.",
+            },
+            {
+              image: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=600&auto=format&fit=crop",
+              title: "Online Education & Test Series",
+              desc: "Live online classes, recorded lecture library, digital study material aur online test series se kabhi bhi aur kahin se bhi padhein.",
+            },
           ].map((f) => (
             <div key={f.title} className={`${styles.featureCard} card-hover`}>
               <img src={f.image} alt={f.title} className={styles.featureImage} />
@@ -155,15 +181,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CTA BANNER ===== */}
+      {/* ===== TIMING & ADMISSION BANNER ===== */}
       <section className={styles.ctaBanner}>
         <div className={styles.ctaBannerContent}>
-          <h2 className={styles.ctaBannerTitle}>Naya Batch Shuru Ho Raha Hai!</h2>
+          <span className="section-label" style={{ color: "#D4AF37", borderColor: "rgba(212,175,55,0.4)" }}>
+            ⏰ Batch Timing: Morning 7:00 AM to Evening 7:00 PM
+          </span>
+          <h2 className={styles.ctaBannerTitle}>Naye Batches Mein Pravesh Prarambh!</h2>
           <p className={styles.ctaBannerSub}>
-            Abhi enroll karein aur apni journey shuru karein Gyandeep Institute ke saath. Limited seats available!
+            Apne bachhe ke shaikshik vikas ke liye aaj hi Gyandeep Institute me demo class book karein. Limited seats available!
           </p>
           <button className={styles.ctaBannerBtn} onClick={() => setIsLeadFormOpen(true)}>
-            Free Demo Class Book Karein →
+            ✨ Free Demo Class Book Karein →
           </button>
         </div>
       </section>

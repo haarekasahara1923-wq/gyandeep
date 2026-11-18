@@ -92,12 +92,14 @@ Please contact me. Thank you!`;
                 value={formData.purpose} 
                 onChange={e => setFormData({...formData, purpose: e.target.value})}
               >
-                <option value="Spoken English Course">Spoken English Course</option>
-                <option value="Grammar Batch">Grammar Batch</option>
-                <option value="Competitive Exam Prep">Competitive Exam Prep (SSC/Bank/Railway)</option>
-                <option value="Academic English">Academic English (School/College)</option>
-                <option value="Demo Class">Free Demo Class</option>
-                <option value="General Inquiry">General Inquiry</option>
+                <option value="Classes 1st to 10th (All Subjects - CBSE/MP Board)">Classes 1st to 10th (All Subjects - CBSE & MP Board)</option>
+                <option value="Classes 11th & 12th (Arts / Biology / Mathematics / Commerce / Agriculture)">Classes 11th & 12th (Arts / Biology / Mathematics / Commerce / Agriculture)</option>
+                <option value="NEET & IIT-JEE (Main & Advanced)">NEET & IIT-JEE (Main & Advanced)</option>
+                <option value="Sainik School / Navodaya / Excellence School">Sainik School / Navodaya / Excellence School</option>
+                <option value="Foundation (Hindi & English, Grammar, Personality Dev)">Foundation (Hindi & English, Grammar, Personality Dev)</option>
+                <option value="Online Education (Live Classes & Test Series)">Online Education (Live Classes & Test Series)</option>
+                <option value="Free Demo Class">Free Demo Class</option>
+                <option value="General Admission Inquiry">General Admission Inquiry</option>
               </select>
             </div>
           </div>
