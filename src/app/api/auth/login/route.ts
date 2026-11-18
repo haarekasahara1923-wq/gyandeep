@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     if (adminList.length === 0) {
       const defaultUsername = process.env.ADMIN_USERNAME || "admin";
-      const defaultPassword = process.env.ADMIN_PASSWORD || "aiel@123";
+      const defaultPassword = process.env.ADMIN_PASSWORD || "gyandeep@123";
       const passwordHash = await bcrypt.hash(defaultPassword, 10);
 
       await db.insert(admins).values({
