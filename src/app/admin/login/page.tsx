@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AdminLogin() {
@@ -7,7 +7,22 @@ export default function AdminLogin() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [logoUrl, setLogoUrl] = useState("");
   const router = useRouter();
+
+  useEffect(() => {
+    fetch("/api/settings")
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success && data.settings) {
+          const found = data.settings.find(
+            (s: { key: string; value: string }) => s.key === "school_logo_url"
+          );
+          if (found?.value) setLogoUrl(found.value);
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -90,16 +105,32 @@ export default function AdminLogin() {
           }}
         />
 
-        {/* Icon */}
+        {/* Logo / Icon */}
         <div
           style={{
-            width: "72px", height: "72px",
+            width: "76px",
+            height: "76px",
             background: "linear-gradient(135deg, rgba(201,162,39,0.15), rgba(212,175,55,0.1))",
-            borderRadius: "50%", display: "flex", alignItems: "center",
-            justifyContent: "center", fontSize: "2rem", margin: "0 auto 20px",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "2rem",
+            margin: "0 auto 20px",
+            overflow: "hidden",
+            border: "2px solid rgba(201,162,39,0.4)",
+            boxShadow: "0 4px 14px rgba(201,162,39,0.2)",
           }}
         >
-          🔐
+          {logoUrl ? (
+            <img
+              src={logoUrl}
+              alt="Logo"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          ) : (
+            "🔐"
+          )}
         </div>
 
         <h1
