@@ -68,12 +68,12 @@ export default function AdminSidebar() {
         </nav>
 
         <a
-          href="https://erp-chi-teal.vercel.app"
+          href="https://coachpro.wapiflow.site"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.manageSchoolBtn}
         >
-          📚 Manage Coaching
+          🏫 Manage Institute
         </a>
 
         <button onClick={handleLogout} className={styles.logoutBtn}>
